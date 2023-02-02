@@ -1,0 +1,93 @@
+.introducao{
+   align-items: center;
+}
+
+.introducao h1{
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 1.875rem;
+    position: relative;
+}
+
+.introducao h1::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 110px;
+    background: url('../img/detalhe.svg') no-repeat center;
+    position: absolute;
+    top: -25px;
+    left:-60px ;
+    z-index: -1;
+}
+
+.local{
+    font-weight: bold;
+    color: #000;
+}
+
+.introducao p{
+    font-size: 1.5rem;
+    color: #525255;
+}
+
+.redes{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 1000px){
+    .introducao h1{
+        font-size: 3rem;
+    }
+
+    .introducao h1::before{
+        background: url('../img/detalhe-m.svg') no-repeat center;
+        top: -40px;
+        left:-65px;
+    }
+
+    .introducao p{
+        font-size: 1.125rem;
+    }
+
+
+}
+
+@media (max-width: 800px){
+    .introducao{
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .introducao h1{
+        font-size: 2rem;
+    }
+
+    .introducao h1::before{
+        background: url('../img/detalhe-mobile.svg') no-repeat center;
+        width: 30px;
+        height: 10px;
+        left: 0px;
+        top: -5px;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .introducao{
+        grid-template-columns: 1fr;
+        
+    }
+
+    .introducao h1{
+        font-size: 3rem;
+    }
+    .introducao img{
+        display: none;
+    }
+
+}

@@ -1,0 +1,61 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    color: #141414;
+}
+
+.container{
+    max-width: 1600px;
+    padding: 100px 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /*4fr 8fr*/
+    gap: 100px;
+}
+
+
+h1,h2,h3,p{
+    margin: 0px;
+
+}
+
+p{
+font-family: 'Dosis', sans-serif;
+}
+
+.subtitulo{
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+
+}
+
+.letra-destaque{
+    color: #3554A4;
+}
+
+.texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 60px;
+    max-width: 40ch;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .subtitulo {
+      font-size: 3rem;
+      max-width: initial !important;
+    }
+  }
+  
